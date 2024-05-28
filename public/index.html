@@ -15,12 +15,12 @@
     <!-- Left Header Section -->
     <div class="flex-center gap-8">
       <!-- App Logo -->
-      <div class="flex-center gap-3">
-        <img src="./images/app-logo.png" class="cursor-pointer" alt="app logo">
-        <span class="text-2xl font-InterSemiBold cursor-pointer">Landwind</span>
+      <div class="flex-center gap-2 lg:gap-3">
+        <img src="./images/app-logo.png" class="md:cursor-pointer" alt="app logo">
+        <span class="text-xl lg:text-2xl font-InterSemiBold md:cursor-pointer">Landwind</span>
       </div>
       <!-- Header Menu -->
-      <ul class="flex-center gap-8">
+      <ul class="hidden md:flex-center gap-4 lg:gap-8">
         <li class="cursor-pointer">Company</li>
         <li class="cursor-pointer">Marketplace</li>
         <li class="cursor-pointer">Features</li>
@@ -28,11 +28,27 @@
         <li class="cursor-pointer">Contact</li>
       </ul>
     </div>
-    <!-- Right Header Section -->
-    <div class="flex-center gap-4 text-sm">
-      <button>Log In</button>
-      <button class="py-2 px-3 bg-purple-600 text-white flex-center rounded-lg">Get started</button>
+    <!-- Right Header Section: Buttons -->
+    <div class="hidden md:flex-center gap-3 lg:gap-4 text-sm">
+      <button><a href=#"">Log In</a></button>
+      <button class="py-2 px-2 lg:px-3 bg-purple-600 text-white flex-center rounded-lg"><a href="#">Get
+          started</a></button>
     </div>
+
+    <!-- Mobile Menu Open Btn -->
+    <div class="md:hidden flex-center relative h-8">
+      <span class="bars-3 mobile-menu-toggle-btn"></span>
+    </div>
+    <!-- Mobile Menu -->
+    <ul class="hidden md:hidden">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </header>
 
 </body>
