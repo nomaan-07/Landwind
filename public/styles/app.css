@@ -446,6 +446,46 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: 'Inter';
+
+  src: url('../fonts/Inter-Regular.ttf') format('truetype');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Medium';
+
+  src: url('../fonts/Inter-Medium.ttf') format('truetype');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter SemiBold';
+
+  src: url('../fonts/Inter-SemiBold.ttf') format('truetype');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter ExtraBold';
+
+  src: url('../fonts/Inter-ExtraBold.ttf') format('truetype');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Black';
+
+  src: url('../fonts/Inter-Black.ttf') format('truetype');
+
+  font-display: swap;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -553,3 +593,138 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 6.25rem;
+  padding-left: 6.25rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.bg-purple-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.font-Inter {
+  font-family: Inter;
+}
+
+.font-InterMedium {
+  font-family: Inter Medium;
+}
+
+.font-InterSemiBold {
+  font-family: Inter SemiBold;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

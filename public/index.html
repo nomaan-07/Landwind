@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landwind</title>
-  <link rel="stylesheet" href="styles/app.css">
+  <link rel="icon" href="images/app-logo.png">
+  <link rel="stylesheet" href="./styles/app.css">
 </head>
-<body>
 
+<body class="font-Inter bg-white text-gray-900">
+  <!-- App Header -->
+  <header class="container font-InterMedium flex items-center justify-between h-20">
+    <!-- Left Header Section -->
+    <div class="flex-center gap-8">
+      <!-- App Logo -->
+      <div class="flex-center gap-3">
+        <img src="./images/app-logo.png" class="cursor-pointer" alt="app logo">
+        <span class="text-2xl font-InterSemiBold cursor-pointer">Landwind</span>
+      </div>
+      <!-- Header Menu -->
+      <ul class="flex-center gap-8">
+        <li class="cursor-pointer">Company</li>
+        <li class="cursor-pointer">Marketplace</li>
+        <li class="cursor-pointer">Features</li>
+        <li class="cursor-pointer">Team</li>
+        <li class="cursor-pointer">Contact</li>
+      </ul>
+    </div>
+    <!-- Right Header Section -->
+    <div class="flex-center gap-4 text-sm">
+      <button>Log In</button>
+      <button class="py-2 px-3 bg-purple-600 text-white flex-center rounded-lg">Get started</button>
+    </div>
+
+  </header>
 </body>
+
 </html>
