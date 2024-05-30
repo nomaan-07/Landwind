@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.ttf") format("truetype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter Medium";
+    src: url("../fonts/Inter-Medium.ttf") format("truetype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter SemiBold";
+    src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter ExtraBold";
+    src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter Black";
+    src: url("../fonts/Inter-Black.ttf") format("truetype");
+    font-display: swap;
+  }
+}
+
+@layer components {
+  .mobile-menu__toggle-btn--open:nth-of-type(1) {
+    transform: rotate(45deg) translateX(-2px);
+    transform-origin: top left;
+    width: 28px;
+  }
+  .mobile-menu__toggle-btn--open:nth-of-type(2) {
+    transform-origin: center;
+    width: 0;
+  }
+  .mobile-menu__toggle-btn--open:nth-of-type(3) {
+    transform: rotate(-45deg) translate(-1px);
+    transform-origin: bottom left;
+    width: 28px;
+  }
+  .mobile-menu {
+    transition: all 250ms ease-in;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+}

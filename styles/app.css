@@ -635,7 +635,7 @@ video {
 }
 
 .mobile-menu__toggle-btn--open:nth-of-type(1) {
-  transform: rotate(45deg) translate(-1px);
+  transform: rotate(45deg) translateX(-2px);
   transform-origin: top left;
   width: 28px;
 }
@@ -1027,12 +1027,12 @@ video {
   transform: none;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .cursor-default {
   cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .touch-auto {
