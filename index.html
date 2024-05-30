@@ -21,7 +21,8 @@
           <span class="text-xl lg:text-2xl font-InterSemiBold cursor-default md:cursor-pointer">Landwind</span>
         </div>
         <!-- Header Menu -->
-        <ul class="hidden md:flex-center gap-4 lg:gap-8 child:cursor-pointer child:transition-all child-hover:text-purple-600">
+        <ul
+          class="hidden md:flex-center gap-4 lg:gap-8 child:cursor-pointer child:transition-all child-hover:text-purple-600">
           <li>Company</li>
           <li>Marketplace</li>
           <li>Features</li>
@@ -31,8 +32,10 @@
       </div>
       <!-- Right Header Section: Buttons -->
       <div class="hidden md:flex-center gap-3 lg:gap-4 text-sm">
-        <button class="hidden lg:inline-block transition-all hover:text-purple-600"><a href=#"">Log In</a></button[>
-        <button class="py-2 px-2 lg:px-3 bg-purple-600 text-white flex-center rounded-lg">
+        <button class="hidden lg:inline-block transition-all hover:text-purple-600">
+          <a href="#">Log In</a>
+        </button>
+        <button class="btn py-2 px-2 lg:px-3 flex-center">
           <a href="#">Get started</a>
         </button>
       </div>
@@ -47,18 +50,55 @@
         class="overlay md:hidden opacity-0 invisible transition-all fixed left-0 bottom-0 right-0 -z-20 top-16 w-full h-screen bg-black/10">
       </div>
       <ul
-        class="mobile-menu -translate-y-[380px]  md:hidden absolute -z-10 left-0 top-16 w-full bg-white flex flex-col items-center font-InterSemiBold text-purple-600 gap-5 py-5 rounded-b-lg">
-        <li class="cursor-default">Company</li>
-        <li class="cursor-default">Marketplace</li>
-        <li class="cursor-default">Features</li>
-        <li class="cursor-default">Team</li>
-        <li class="cursor-default">Contact</li>
-        <li class="cursor-default py-2 px-2 lg:px-3 bg-purple-600 text-white flex-center rounded-lg">
+        class="mobile-menu -translate-y-[380px]  md:hidden absolute -z-10 left-0 top-16 w-full bg-white flex flex-col items-center font-InterSemiBold text-purple-600 gap-5 py-5 rounded-b-lg child:cursor-default">
+        <li>Company</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Team</li>
+        <li>Contact</li>
+        <li class="btn py-2 px-2 lg:px-3 flex-center">
           <a href="#">Get Started</a>
         </li>
       </ul>
     </div>
   </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="mt-16">
+      <div class="container flex items-center justify-between">
+        <!-- Left Hero Section -->
+        <div class="w-[736px] 2xl:w-[900px]">
+          <!-- Hero Title -->
+          <h1 class="font-InterBlack text-6xl">Building digital products & brands.</h1>
+          <!-- Hero Caption -->
+          <p class="text-xl text-gray-500 mt-6">Here at flowbite we focus on markets where technology, innovation, and
+            capital can unlock long-term value and drive economic growth.</p>
+
+          <!-- Hero Buttons -->
+          <div class="flex items-center gap-4 mt-10 cursor-default md:child:cursor-pointer">
+            <button class="btn py-4 px-5">
+              <a href="#">Start 30 day free trial</a>
+            </button>
+            <button class="text-gray-800 rounded-lg font-InterMedium py-4 px-5 border border-gray-200">
+              <a href="#">Pricing & FAQ</a>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Section -->
+        <div class="">
+          <img src="./images/heros-section.png" alt="digital products">
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
 
   <script src="./js/app.js"></script>
 </body>
