@@ -11,46 +11,53 @@
 
 <body class="font-Inter bg-white text-gray-900">
   <!-- App Header -->
-  <header class="container font-InterMedium flex items-center justify-between h-20">
-    <!-- Left Header Section -->
-    <div class="flex-center gap-8">
-      <!-- App Logo -->
-      <div class="flex-center gap-2 lg:gap-3">
-        <img src="./images/app-logo.png" class="md:cursor-pointer" alt="app logo">
-        <span class="text-xl lg:text-2xl font-InterSemiBold md:cursor-pointer">Landwind</span>
+  <header class="z-40 fixed md:static top-0 left-0 right-0 shadow md:shadow-none bg-white h-20">
+    <div class="container font-InterMedium flex items-center justify-between h-20">
+      <!-- Left Header Section -->
+      <div class="flex-center gap-8">
+        <!-- App Logo -->
+        <div class="flex-center gap-2 lg:gap-3">
+          <img src="./images/app-logo.png" class="cursor-default md:cursor-pointer" alt="app logo">
+          <span class="text-xl lg:text-2xl font-InterSemiBold cursor-default md:cursor-pointer">Landwind</span>
+        </div>
+        <!-- Header Menu -->
+        <ul class="hidden md:flex-center gap-4 lg:gap-8">
+          <li class="cursor-pointer">Company</li>
+          <li class="cursor-pointer">Marketplace</li>
+          <li class="cursor-pointer">Features</li>
+          <li class="cursor-pointer">Team</li>
+          <li class="cursor-pointer">Contact</li>
+        </ul>
       </div>
-      <!-- Header Menu -->
-      <ul class="hidden md:flex-center gap-4 lg:gap-8">
-        <li class="cursor-pointer">Company</li>
-        <li class="cursor-pointer">Marketplace</li>
-        <li class="cursor-pointer">Features</li>
-        <li class="cursor-pointer">Team</li>
-        <li class="cursor-pointer">Contact</li>
+      <!-- Right Header Section: Buttons -->
+      <div class="hidden md:flex-center gap-3 lg:gap-4 text-sm">
+        <button class="hidden lg:inline-block"><a href=#"">Log In</a></button>
+        <button class="py-2 px-2 lg:px-3 bg-purple-600 text-white flex-center rounded-lg">
+          <a href="#">Get started</a>
+        </button>
+      </div>
+      <!-- Mobile Menu Open Btn -->
+      <div class="cursor-default md:hidden flex flex-col justify-between w-8 relative h-5 mobile-menu__toggle-btn">
+        <span class="bar w-full h-[3px] bg-purple-600 transition-all rounded-3xl"></span>
+        <span class="bar w-full h-[3px] bg-purple-600 transition-all rounded-3xl"></span>
+        <span class="bar w-full h-[3px] bg-purple-600 transition-all rounded-3xl mt-px"></span>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        class="overlay md:hidden opacity-0 invisible transition-all fixed left-0 bottom-0 right-0 -z-20 top-16 w-full h-screen bg-black/10">
+      </div>
+      <ul
+        class="mobile-menu -translate-y-[380px]  md:hidden absolute -z-10 left-0 top-16 w-full bg-white flex flex-col items-center font-InterSemiBold text-purple-600 gap-5 py-5 rounded-b-lg">
+        <li>Company</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Team</li>
+        <li>Contact</li>
+        <li class="cursor-default py-2 px-2 lg:px-3 bg-purple-600 text-white flex-center rounded-lg">
+          <a href="#">Get Started</a>
+        </li>
       </ul>
     </div>
-    <!-- Right Header Section: Buttons -->
-    <div class="hidden md:flex-center gap-3 lg:gap-4 text-sm">
-      <button><a href=#"">Log In</a></button>
-      <button class="py-2 px-2 lg:px-3 bg-purple-600 text-white flex-center rounded-lg"><a href="#">Get
-          started</a></button>
-    </div>
-
-    <!-- Mobile Menu Open Btn -->
-    <div class="md:hidden flex flex-col justify-between w-8 relative h-5 mobile-menu__toggle-btn">
-      <span class="bar w-full h-[3px] bg-purple-600 transition-all rounded-3xl"></span>
-      <span class="bar w-full h-[3px] bg-purple-600 transition-all rounded-3xl"></span>
-      <span class="bar w-full h-[3px] bg-purple-600 transition-all rounded-3xl mt-px"></span>
-    </div>
-    <!-- Mobile Menu -->
-    <ul class="hidden md:hidden">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
   </header>
 
   <script src="./js/app.js"></script>
