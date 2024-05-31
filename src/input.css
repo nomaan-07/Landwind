@@ -55,6 +55,6 @@
     @apply flex items-center justify-center;
   }
   .btn {
-    @apply text-white bg-purple-600 font-InterMedium rounded-lg;
+    @apply text-white bg-purple-600 font-Inter md:font-InterMedium rounded-lg;
   }
 }
