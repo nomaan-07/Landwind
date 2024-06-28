@@ -48,6 +48,10 @@
   .mobile-menu {
     transition: all 250ms ease-in;
   }
+
+  .section__title {
+    @apply font-InterExtraBold text-4xl leading-tight;
+  }
 }
 
 @layer utilities {
