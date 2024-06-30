@@ -1037,6 +1037,10 @@ video {
   width: 2rem;
 }
 
+.w-\[544px\] {
+  width: 544px;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1051,6 +1055,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[640px\] {
+  width: 640px;
 }
 
 .flex-shrink {
