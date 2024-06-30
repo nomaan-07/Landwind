@@ -9,6 +9,11 @@
     font-display: swap;
   }
   @font-face {
+    font-family: "Inter Light";
+    src: url("../fonts/Inter-Light.ttf") format("truetype");
+    font-display: swap;
+  }
+  @font-face {
     font-family: "Inter Medium";
     src: url("../fonts/Inter-Medium.ttf") format("truetype");
     font-display: swap;
@@ -19,10 +24,17 @@
     font-display: swap;
   }
   @font-face {
+    font-family: "Inter Bold";
+    src: url("../fonts/Inter-Bold.ttf") format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
     font-family: "Inter ExtraBold";
     src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
     font-display: swap;
   }
+
   @font-face {
     font-family: "Inter Black";
     src: url("../fonts/Inter-Black.ttf") format("truetype");
