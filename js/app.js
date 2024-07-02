@@ -3,6 +3,7 @@ const barsElements = document.querySelectorAll(".bar");
 const overlayElem = document.querySelector(".overlay");
 const mobileMenuElem = document.querySelector(".mobile-menu");
 const faqQuestionElements = document.querySelectorAll(".faq__question");
+const scrollToTopBtn = document.querySelector(".scroll-to-top");
 
 const visibilityClasses = ["opacity-0", "invisible", "opacity-100", "visible"];
 
@@ -43,6 +44,17 @@ const faqToggle = (event) => {
   answerElem.classList.toggle("h-0");
 };
 
+const scrollToTop = () => {
+  if (window.scrollY > 24) {
+    scrollToTopBtn.classList.add("flex-center");
+    scrollToTopBtn.classList.remove("hidden");
+  } else {
+    scrollToTopBtn.classList.remove("flex-center");
+    scrollToTopBtn.classList.add("hidden");
+  }
+};
+
 mobileMenuToggleBtn.addEventListener("click", mobileMenuToggle);
 overlayElem.addEventListener("click", mobileMenuToggle);
 faqQuestionElements.forEach((elem) => elem.addEventListener("click", faqToggle));
+window.addEventListener("scroll", scrollToTop);

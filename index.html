@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -88,6 +88,11 @@
       <path
         d="M16.0352 13.125L16.5273 9.89062H13.3984V7.78125C13.3984 6.86719 13.8203 6.02344 15.2266 6.02344H16.668V3.24609C16.668 3.24609 15.3672 3 14.1367 3C11.5703 3 9.88281 4.58203 9.88281 7.39453V9.89062H7V13.125H9.88281V21H13.3984V13.125H16.0352Z"
         fill="currentColor" />
+    </symbol>
+
+    <symbol id="arrow-up" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
     </symbol>
 
   </svg>
@@ -813,6 +818,12 @@
 
     </div>
   </footer>
+
+  <a href="#" class="scroll-to-top hidden size-9 bg-purple-600 rounded-full fixed bottom-3 right-3">
+    <svg class="text-white size-5">
+      <use href="#arrow-up"></use>
+    </svg>
+  </a>
 
   <script src="./js/app.js"></script>
 </body>
