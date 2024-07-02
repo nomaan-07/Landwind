@@ -11,7 +11,7 @@ Welcome to the **Landwind** landing page! This project showcases my web developm
 1. **Responsive Design**
    - This landing page is fully responsive for smaller devices.
 
-## Copyright ©️
+## Figma File 🎨
 
 - The Figma design for this project can be found
   [here](https://www.figma.com/community/file/1125744163617429490).
