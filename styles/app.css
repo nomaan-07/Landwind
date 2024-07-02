@@ -703,9 +703,16 @@ video {
   border-top-width: 1px;
   --tw-border-opacity: 1;
   border-top-color: rgb(229 231 235 / var(--tw-border-opacity));
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  padding-right: 2.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .faq__answer--open {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .sr-only {
@@ -1085,10 +1092,6 @@ video {
   width: 300px;
 }
 
-.w-\[695px\] {
-  width: 695px;
-}
-
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1105,6 +1108,10 @@ video {
   width: 100%;
 }
 
+.max-w-\[695px\] {
+  max-width: 695px;
+}
+
 .max-w-\[768px\] {
   max-width: 768px;
 }
@@ -1115,6 +1122,10 @@ video {
 
 .shrink {
   flex-shrink: 1;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .flex-grow {
@@ -2176,11 +2187,6 @@ video {
   border-bottom-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
-.border-t-gray-200 {
-  --tw-border-opacity: 1;
-  border-top-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2354,14 +2360,14 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-16 {
@@ -2370,10 +2376,6 @@ video {
 
 .pb-6 {
   padding-bottom: 1.5rem;
-}
-
-.pr-10 {
-  padding-right: 2.5rem;
 }
 
 .text-left {
@@ -3247,6 +3249,11 @@ video {
   .md\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:pb-20 {
