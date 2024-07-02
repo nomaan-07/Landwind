@@ -64,6 +64,10 @@
   .section__title {
     @apply font-InterExtraBold text-2xl md:text-3xl xl:text-4xl leading-tight;
   }
+
+  .faq__answer--open {
+    @apply py-5 pr-10 h-auto border-t border-t-gray-200;
+  }
 }
 
 @layer utilities {
