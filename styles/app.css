@@ -677,27 +677,6 @@ video {
   transition: all 250ms ease-in;
 }
 
-.section__title {
-  font-family: Inter ExtraBold;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  line-height: 1.25;
-}
-
-@media (min-width: 768px) {
-  .section__title {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .section__title {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-
 .faq__answer--open {
   height: auto;
   border-top-width: 1px;
@@ -1728,6 +1707,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -3009,6 +2994,27 @@ video {
 @media (min-width: 768px) {
   .btn {
     font-family: Inter Medium;
+  }
+}
+
+.section__title {
+  font-family: Inter ExtraBold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .section__title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section__title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 

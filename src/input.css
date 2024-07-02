@@ -61,10 +61,6 @@
     transition: all 250ms ease-in;
   }
 
-  .section__title {
-    @apply font-InterExtraBold text-2xl md:text-3xl xl:text-4xl leading-tight;
-  }
-
   .faq__answer--open {
     @apply py-3 md:py-5 md:pr-10 h-auto border-t border-t-gray-200;
   }
@@ -76,5 +72,9 @@
   }
   .btn {
     @apply text-white bg-purple-600 font-Inter md:font-InterMedium rounded-lg;
+  }
+
+  .section__title {
+    @apply font-InterExtraBold text-2xl md:text-3xl xl:text-4xl leading-tight;
   }
 }
