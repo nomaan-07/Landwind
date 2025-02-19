@@ -24,7 +24,6 @@ module.exports = {
         },
         padding: {
           DEFAULT: "1rem",
-          xl: "0",
         },
       },
       screens: {
